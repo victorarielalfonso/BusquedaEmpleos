@@ -9,24 +9,24 @@
   </head>
 
   <body>
-    <header>
+    <header class="header-empleos">
       <h1>
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <polyline points="16 18 22 12 16 6"></polyline>
           <polyline points="8 6 2 12 8 18"></polyline>
         </svg>
         DevJobs
       </h1>
-      <div>
-        <a href="#">Publicar un empleos</a>
-      </div>
+      <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="">Subir CV</a>
+      </nav>
     </header>
 
     <main>
       <section class="jobs-search">
-        
-        <h1>Encuentra tu próximo empleo</h1>
+        <h2>Encuentra tu próximo empleo</h2>
         <p>Explora miles de oportunidades en el sector tecnológico</p>
 
         <form role="search">
@@ -34,7 +34,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
               viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-              class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+              class="icon icon-tabler icon-tabler-search" aria-hidden="true">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
               <path d="M21 21l-6 -6" />
@@ -50,7 +50,7 @@
               <option value="jenkins">Jenkins</option>
             </select>
 
-               <select name="ubi" id="ubi">
+            <select name="ubi" id="ubi">
               <option value="">Ubicación</option>
               <option value="paraguay">Paraguay</option>
               <option value="brasil">Brasil</option>
@@ -68,40 +68,37 @@
         </form>
       </section>
 
-      <section>
-        <header>
-            <h3>Resultado de busqueda</h3>
+      <section class="job-listings" role="list">
+        <h2>Resultado de búsqueda</h2>
 
-            <footer>
-                <article>
-                    <div>
-                        <h3>desarollador de Aplicaciones moviles</h3>
-                        <small>Modile Apps Ltd | Aplicaciones mobiles</small>
-                        <p>Buscamos desarollador de Aplicaciones móviles con experience
-                            utilizando flutter y android studio
-                        </p>
-                    </div>
-                        <button>Aplicar</button>
-                </article>
+        <article role="listitem" class="job-item">
+          <div class="job-info">
+            <h3>Desarrollador de Aplicaciones Móviles</h3>
+            <small>Mobile Apps Ltd | Aplicaciones móviles</small>
+            <p>Buscamos desarrollador de aplicaciones móviles con experiencia utilizando Flutter y Android Studio.</p>
+          </div>
+          <button type="button">Aplicar</button>
+        </article>
 
-                <article>
-                    <div>
-                        <h3>Analistas de datos</h3>
-                        <small>Power | </small>
-                        <p>Gran empresa te está buscando
-                           
-                        </p>
-                    </div>
-                        <button>Aplicar</button>
-                </article>
-            </footer>
-        </header>
+        <article role="listitem" class="job-item">
+          <div class="job-info">
+            <h3>Analista de Datos</h3>
+            <small>Power | </small>
+            <p>Gran empresa te está buscando.</p>
+          </div>
+          <button type="button">Aplicar</button>
+        </article>
+
+        <article role="listitem" class="job-item">
+          <div class="job-info">
+            <h3>Programador Fullstack</h3>
+            <small>Power | </small>
+            <p>Gran empresa te está buscando.</p>
+          </div>
+          <button type="button">Aplicar</button>
+        </article>
 
       </section>
-
-
-
-
     </main>
 
     <footer>
