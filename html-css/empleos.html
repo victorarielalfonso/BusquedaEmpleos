@@ -18,9 +18,12 @@
         </svg>
         DevJobs
       </h1>
+      <div>
+        <a href="">Subir CV</a>
+      </div>
       <nav>
         <a href="inicio.html">Inicio</a>
-        <a href="">Subir CV</a>
+        
       </nav>
     </header>
 
@@ -68,11 +71,13 @@
         </form>
       </section>
 
-      <section class="job-listings" role="list">
-        <h2>Resultado de búsqueda</h2>
+      <h2>Resultado de búsqueda</h2>
 
-        <article role="listitem" class="job-item">
-          <div class="job-info">
+      <section class="job-listings" role="list">
+                    
+        <div>
+        <article>
+          <div>
             <h3>Desarrollador de Aplicaciones Móviles</h3>
             <small>Mobile Apps Ltd | Aplicaciones móviles</small>
             <p>Buscamos desarrollador de aplicaciones móviles con experiencia utilizando Flutter y Android Studio.</p>
@@ -80,8 +85,8 @@
           <button type="button">Aplicar</button>
         </article>
 
-        <article role="listitem" class="job-item">
-          <div class="job-info">
+        <article>
+          <div>
             <h3>Analista de Datos</h3>
             <small>Power | </small>
             <p>Gran empresa te está buscando.</p>
@@ -89,19 +94,43 @@
           <button type="button">Aplicar</button>
         </article>
 
-        <article role="listitem" class="job-item">
-          <div class="job-info">
+        <article>
+          <div>
             <h3>Programador Fullstack</h3>
             <small>Power | </small>
             <p>Gran empresa te está buscando.</p>
           </div>
           <button type="button">Aplicar</button>
         </article>
+      </div>
 
+      <nav class="pagination">
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+           height="24" viewBox="0 0 24 24" fill="currentColor" 
+           class="icon icon-tabler icons-tabler-filled icon-tabler-circle-chevron-left"><path 
+           stroke="none" d="M0 0h24v24H0z" fill="none"/><path 
+           d="M17 3.34a10 10 0 0 1 5 8.66c0 5.523 -4.477 10 -10
+            10s-10 -4.477 -10 -10a10 10 0 0 1 15 -8.66m-3.293 4.953a1 
+            1 0 0 0 -1.414 0l-3 3a1 1 0 0 0 0 1.414l3 3a1 1 0 0 0 1.414 0l.083 -.094a1 1 0 0 0 
+            -.083 -1.32l-2.292 -2.293l2.292 -2.293a1 1 0 0 0 0 -1.414" /></svg></a>
+         <a class="is-active" href="#">1</a>
+         <a href="#">2</a>
+         <a href="#">3</a>
+         <a href="#">4</a>
+         <a href="#">5</a>
+         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+          viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled 
+          icon-tabler-circle-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -20 0c0 -5.523 4.477 -10 10 -10m-.293
+           6.293a1 1 0 0 0 -1.414 0l-.083 .094a1 1 0 0 0 .083 1.32l2.292 2.293l-2.292 2.293a1 1 0 0 0
+            1.414 1.414l3 -3a1 1 0 0 0 0 -1.414z" /></svg></a>
+        
+      </nav>
       </section>
+         
     </main>
 
-    <footer>
+    <footer style="padding-bottom: 100px">
       <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
     </footer>
   </body>
