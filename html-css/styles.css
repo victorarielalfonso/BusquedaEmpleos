@@ -329,6 +329,9 @@ article {
 .job-listings {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
 
   article {
     background: none;
@@ -339,8 +342,13 @@ article {
 
     display: flex;
     align-items: start;
+    justify-content: space-between;
     gap: 1rem;
-  
+
+
+  div{
+    flex: 1;
+  }
 
     small {
       font-size: 0.875rem;
@@ -386,3 +394,9 @@ article {
   }
 
 
+.button-apply-job{
+  &.is-applied{
+    background: #4caf50;
+    pointer-events: none;
+  }
+}
